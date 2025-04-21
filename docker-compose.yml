@@ -1,0 +1,16 @@
+services:
+  hypervel_v2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hypervel_v2
+    ports:
+      - "9501:9501"
+    volumes:
+      - .:/data/project
+    privileged: true
+    user: "0:0"
+    stdin_open: true
+    tty: true
+    security_opt:
+      - seccomp:unconfined
