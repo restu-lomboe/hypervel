@@ -1,6 +1,5 @@
 # docker CLI
 `docker-compose build`
-`docker-compose build`
  
 `docker-compose up -d` 
 `docker exec -it hypervel_v2 /bin/sh`
